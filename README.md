@@ -1,1 +1,1 @@
-#this is a resource of a front page
+# this is a resource of a front page
