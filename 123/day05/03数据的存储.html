@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var str = "str"
+        // var p = str
+        // console.log(str, p);
+
+        // console.log(str == p);
+        // console.log(str === p);
+        // str = "123"
+        // console.log(p, str);
+
+        // var obj = {
+        //     name: "123",
+        //     age: "123"
+        // }
+        // var p1 = obj
+        // console.log(obj, p1);
+        // console.log(obj == p1);
+        // console.log(obj === p1);
+
+        // obj.name = "456"
+        // console.log(obj, p1);
+
+        // function fn(a, b) {
+        //     a = a + 1;
+        //     b = b + 1;
+        //     console.log(a);
+        //     console.log(b);
+        // }
+
+        // var x = 10;
+        // var y = 5;
+
+        // fn(x, y);
+
+        // console.log(x, y); // 思考：x ， y 的值是多少？
+
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            this.sayHi = function () {
+                console.log("你好");
+            }
+        }
+        var p1 = new Person("张三", 18);
+
+        function getperson(person) {
+            var person = p1
+            person.name = "李四";
+
+            person = new Person("王五", 20)
+
+        }
+        getperson(p1);
+
+        console.log(p1.name);// 思考： p1 的name值是什么？
+    </script>
+</body>
+
+</html>

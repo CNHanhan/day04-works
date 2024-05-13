@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>123567</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+    <h2>
+        美女画廊
+    </h2>
+
+    <ul id="imagegallery">
+        <li>
+            <a href="images/1.jpg">
+                <img src="images/1-small.jpg" width="100px" alt="美女1" />
+            </a>
+        </li>
+
+        <li>
+            <a href="images/2.jpg">
+                <img src="images/2-small.jpg" width="100px" alt="美女2" />
+            </a>
+        </li>
+
+        <li>
+            <a href="images/3.jpg">
+                <img src="images/3-small.jpg" width="100px" alt="美女3" />
+            </a>
+        </li>
+
+        <li>
+            <a href="images/4.jpg">
+                <img src="images/4-small.jpg" width="100px" alt="美女4" />
+            </a>
+        </li>
+    </ul>
+
+    <img id="photo" src="images/placeholder.png" alt="" width="450px" />
+
+    <p id="des">选择一个图片</p>
+
+    <script>
+        var btn= document.querySelectorAll("a>img")
+        console.log(btn);
+
+        for (var i = 0;i<btn.length;i++){
+            btn.onclick=function(){
+            // img.src="a.href"
+            console.log();
+            
+            return false
+        }
+        }
+        
+      
+    </script>
+
+
+</body>
+
+</html>

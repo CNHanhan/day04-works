@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum and Average Calculator</title>
+</head>
+<body>
+    <script>
+        //输入一串数字
+        var a1 = [10, 20, 30, 40, 50];
+
+        
+        let sum = 0;
+        for (let a1 of a1) {
+            sum += a1;
+        }
+
+        var average = sum / a1.length;
+
+        document.getElementById("sum").textContent = sum;
+        document.getElementById("average").textContent = average.toFixed(2); // Format average to 2 decimal places
+    </script>
+
+    <p>Sum: <span id="sum"></span></p>
+    <p>Average: <span id="average"></span></p>
+</body>
+</html>

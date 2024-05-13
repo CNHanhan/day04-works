@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var n=[21,4,5,6,2]
+        // for(var i = 0;n[i]<n[i+1],i++;){
+        //     var max = n[i+1]
+            
+        //     document.console.log((max));
+        //      for(var j = 0;n[i]<n[i+1],i++){
+        // }
+        flag = false;
+        for (int i = 1; i < n; i++) {
+            if (a[i] > a[i + 1]) {
+                flag = true;
+                int t = a[i];
+                a[i] = a[i + 1];
+                a[i + 1] = t;
+                document.write(a[i+1])
+            }
+        }
+
+    </script>
+</body>
+</html>

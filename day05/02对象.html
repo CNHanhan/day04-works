@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // object 
+        // 我想吃锅包肉 ，我自己做
+        // 吃
+
+        // var obj = new Object()
+        // console.log(obj);
+        // var obj1 = {
+        //     age: 123,
+        //     oo: {
+
+        //     }
+        // }
+        // console.log(obj1);
+
+        // obj.name = "小明"
+        // console.log(obj);
+        // obj1["sex"] = "女"
+        // console.log(obj1);
+        obj.eat = function () {
+            console.log("我会吃");
+        }
+
+        // console.log(obj.name);
+        console.log(obj.eat());
+        obj.eat()
+        // 构造函数
+        // this关键字 搭配 new关键字 就可以创建出来一个对象
+
+        function Fn(dx, color) {
+            this.dx = dx
+            this.color = color
+        }
+
+        // console.log(Fn(10, "red"));  
+        var jd1 = new Fn(10, "红")
+        var jd2 = new Fn(10, "白")
+        console.log(jd1, jd2);
+
+        // json 字符串
+        var obj = {
+            "name": "小明",
+            "age": 10,
+            "sex": "男",
+            "zhiye": "学生"
+        }
+        console.log(typeof obj);
+        console.log(obj.name);
+
+
+        var student = {
+            "name": "小明3",
+            // "age": 10,
+            // "sex": "男",
+            // "zhiye": "学生"
+            a: 10
+        }
+        for (const key in obj) {
+            // console.log(key);
+            console.log(obj[key]);
+            student[key] = obj[key]
+        }
+        console.log(student);
+
+    </script>
+</body>
+
+</html>
